@@ -89,9 +89,10 @@ text-decoration: 3px;
 
 }
 .register-link p a {
-    color: #fff;
+    color: #350bf1;
     text-decoration: none;
     font-weight: 600;
+    text-decoration: underline;
 }
 .register-link p a:hover {
     text-decoration: underline;

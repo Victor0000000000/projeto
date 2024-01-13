@@ -1,3 +1,11 @@
+<?php
+// Incluir o arquivo de conexão com o banco de dados
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,24 +18,24 @@
 </head>
 <body>
   <div class="wrapper">
-    <form action="">
+    <form action="salvar.php" method="POST">
         <h1>Registre-se</h1>
         <div class="input-box">
-            <input type="text" placeholder="Usuario" required>
+            <input type="text" name="usuario" id="usuario" placeholder="Nome" required>
             <i class='bx bxs-user'></i>
         </div>
         <div class="input-box">
-            <input type="password" placeholder="senha" required>
+            <input type="password" name="senha" id="senha" placeholder="senha" required>
             <i class="fa-solid fa-lock"></i>
         </div>
         <div class="input-box">
-            <input type="email" placeholder="email" required>
+            <input type="email" name="email" id="email" placeholder="email" required>
             <i class="fa-solid fa-envelope"></i>
         </div>
         <div class="remember-forgot">
             
         </div>
-        <button type="submit" class="btn">Login</button>
+        <button type="submit" name="submit" id="submit" class="btn">cadastrar</button>
         <div class="register-link">
             <p>Já possue uma conta? <a href="login.html">logue!</a></p>
         </div>

@@ -37,7 +37,7 @@
         </div>
         <button type="submit" name="submit" id="submit" class="btn">cadastrar</button>
         <div class="register-link">
-            <p>Já possue uma conta? <a href="login.html">logue!</a></p>
+            <p>Já possue uma conta? <a href="login.php">logue!</a></p>
         </div>
     </form>
   </div>  

@@ -1,18 +1,6 @@
 <?php
 include ('conexao.php');
-
-if (isset($_POST['usuario']) || isset($_POST['senha'])) {
-    
-    if (strlen($_POST['usuario']) == 0) {
-        echo "Preencha com seu nome de usuário";
-    } else if (strlen($_POST['senha']) == 0) {
-        echo "Preencha com sua senha";
-    }
-}
 ?>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,14 +13,14 @@ if (isset($_POST['usuario']) || isset($_POST['senha'])) {
 </head>
 <body>
   <div class="wrapper">
-    <form action="">
+    <form action="validarlogin.php" method="POST">
         <h1>Login</h1>
         <div class="input-box">
-            <input type="text" placeholder="Usuario" required>
+            <input type="text" name="usuario" id="usuario"  placeholder="Usuario" required>
             <i class='bx bxs-user'></i>
         </div>
         <div class="input-box">
-            <input type="password" placeholder="senha" required>
+            <input type="password" name="senha" id="senha" placeholder="senha" required>
             <i class="fa-solid fa-lock"></i>
         </div>
         <div class="remember-forgot">
